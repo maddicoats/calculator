@@ -1,6 +1,6 @@
 # Javascript Calculator Project
 
-this is the design i will be reproducing: ![calculator](/ref1.jpg)
+this is the design i will be reproducing: ![calculator](ref1.JPG)
 
 
 ## javascript breakdown:
