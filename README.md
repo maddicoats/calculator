@@ -1,8 +1,10 @@
-#Javascript Calculator Project
+# Javascript Calculator Project
 
-this is the design i will be reproducing: ![calculator](./ref1.jpg)
+this is the design i will be reproducing: ![calculator](/ref1.jpg)
 
-##javascript breakdown:
+
+## javascript breakdown:
+
 * define constant variables to represent the buttons
 * clear function with clear()
 * add numbers to screen with appendNumber()
