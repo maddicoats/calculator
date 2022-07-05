@@ -7,6 +7,10 @@
     <title>Novus 650 || Mathbox</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Chakra+Petch:wght@300&family=Montserrat&family=Orbitron&family=Poppins:wght@300&family=Skranji:wght@700&family=VT323&display=swap" rel="stylesheet">
     
 
 </head>
@@ -15,12 +19,79 @@
         <div class="novus">NOVUS 65O</div>
         <div class="innershell">
             <div class="screen">
-                <div class="output">
+                <div class="output">58008
                 </div>
             </div>
             
-            <div class="buttonbox">
+            <div class="container">
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                </label>
+                
+                <span id="mathbox">MathBox</span>
+                
+                <div id="on" for=".switch">ON ></div>
 
+                <!-- ROW 1 -->
+                <div class="labelbox" id="labelbox1">
+                    <label for="#7">7</label>
+                    <label for="#8">8</label>
+                    <label for="#9">9</label>
+                    <label for="#divide">÷</label>
+                </div>
+                <div class="buttonbox">
+                    <button id="7"></button>
+                    <button id="8"></button>               
+                    <button id="9"></button>
+                    <button id="divide" class="blue"></button>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="labelbox">
+                    <label for="#4">4</label>
+                    <label for="#5">5</label>
+                    <label for="#6">6</label>
+                    <label for="#multiply">×</label>
+                </div>
+                <div class="buttonbox">
+                    <button id="4"></button>
+                    <button id="5"></button>               
+                    <button id="6"></button>
+                    <button id="multiply" class="blue"></button>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="labelbox">
+                    <label for="#1">1</label>
+                    <label for="#2">2</label>
+                    <label for="#3">3</label>
+                    <label for="#subtract">−</label>
+                </div>
+                <div class="buttonbox">
+                    <button id="1"></button>
+                    <button id="2"></button>               
+                    <button id="3"></button>
+                    <button id="subtract" class="blue"></button>
+                </div>
+
+                <!-- ROW 4 -->
+                <div class="labelbox">
+                    <label for="#CE">CE/C</label>
+                    <label for="#0">O</label>
+                    <label for="#inv"></label>
+                    <label for="#enter">ENT+</label>
+                </div>
+                <div class="buttonbox">
+                    <button id="CE" class="black"></button>
+                    <button id="0"></button>               
+                    <button id="inv"></button>
+                    <button id="enter" class="blue"></button>
+                </div>
+                
+                
+               
+                
             </div>
         </div>
         
