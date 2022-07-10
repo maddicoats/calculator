@@ -1,4 +1,6 @@
-//Make output text become invisible when switch is turned off
+const onOff = document.querySelector('#onOff')
+onOff.addEventListener('click', (event) => document.querySelector('.output').classList.toggle('off'))
+
 
 const calculator = {
     outputValue: '0',
@@ -6,7 +8,6 @@ const calculator = {
     waitingForSecondOperand: false,
     operator: null,
 };
-
 
 function inputNumber(number) {
     const { outputValue, waitingForSecondOperand } = calculator;
@@ -77,6 +78,10 @@ keys.addEventListener('click', (event) => {
     const { target } = event;
 
     if (!target.matches('button')) {
+        return;
+    }
+
+    if (document.querySelector('.output').classList.contains('off')) {
         return;
     }
 

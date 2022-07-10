@@ -78,6 +78,11 @@ body {
   letter-spacing: 15px;
 }
 
+.off {
+  color: transparent;
+  text-shadow: none;
+}
+
 .container {
   background-color: #c17849;
   height: 378px;
