@@ -1,9 +1,12 @@
 body {
     background-color: rgb(35, 57, 57);
     cursor: default;
+    display: flex;
+    justify-content: center;
 }
 
 .outershell {
+    margin-top: 15px;
     height: 630px;
     width: 350px;
     display: flex;
@@ -63,6 +66,8 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
 
     &--output {
         height: 30px;

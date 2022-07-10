@@ -19,7 +19,7 @@
         <div class="novus">NOVUS 65O</div>
         <div class="innershell">
             <div class="screen">
-                <div class="screen--output">01234</div>
+                <div class="screen--output output"></div>
             </div>
             
             <div class="container">
@@ -40,10 +40,10 @@
                     <label for="#divide">÷</label>
                 </div>
                 <div class="buttonbox">
-                    <button id="7"></button>
-                    <button id="8"></button>               
-                    <button id="9"></button>
-                    <button id="divide" class="blue"></button>
+                    <button value="7" class="number" id="7"></button>
+                    <button value="8" class="number" id="8"></button>               
+                    <button value="9" class="number" id="9"></button>
+                    <button value="/" id="divide" class="blue operator"></button>
                 </div>
 
                 <!-----ROW 2----->
@@ -54,10 +54,10 @@
                     <label for="#multiply">×</label>
                 </div>
                 <div class="buttonbox">
-                    <button id="4"></button>
-                    <button id="5"></button>               
-                    <button id="6"></button>
-                    <button id="multiply" class="blue"></button>
+                    <button value="4" class="number" id="4"></button>
+                    <button value="5" class="number" id="5"></button>               
+                    <button value="6" class="number" id="6"></button>
+                    <button value="*" id="multiply" class="blue  operator"></button>
                 </div>
 
                 <!----ROW 3---->
@@ -68,27 +68,28 @@
                     <label for="#subtract">—</label>
                 </div>
                 <div class="buttonbox">
-                    <button id="1"></button>
-                    <button id="2"></button>               
-                    <button id="3"></button>
-                    <button id="subtract" class="blue"></button>
+                    <button value="1" class="number" id="1"></button>
+                    <button value="2" class="number" id="2"></button>               
+                    <button value="3" class="number" id="3"></button>
+                    <button value="-" id="subtract" class="blue operator"></button>
                 </div>
 
                 <!----ROW 4---->
                 <div class="labelbox">
                     <label for="#CE">CE/C</label>
                     <label for="#0">O</label>
-                    <label for="#inv"></label>
+                    <label for="#decimal">.</label>
                     <label for="#enter">ENT+</label>
                 </div>
                 <div class="buttonbox">
-                    <button id="CE" class="black"></button>
-                    <button id="0"></button>               
-                    <button id="inv" disabled></button>
-                    <button id="enter" class="blue"></button>
+                    <button id="CE" class="black clear"></button>
+                    <button value="0" class="number" id="0"></button>               
+                    <button value="." class="number" id="decimal"></button>
+                    <button value="=" id="enter+" class="blue operator equals"></button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="script2.js"></script>
 </html>
