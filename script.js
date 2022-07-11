@@ -19,7 +19,9 @@ const calculator = {
 function inputNumber(number) {
     const { outputValue, waitingForSecondOperand } = calculator;
 
-    if (number === '.' && outputValue.includes('.')) return;
+    if (number === '.' && outputValue.includes('.') && calculator.operator !== null) {
+        calculator.outputValue = outputValue === '0' ? number : outputValue + number;
+    } else if (number === '.' && outputValue.includes('.')) return;
 
     if (waitingForSecondOperand === true) {
         calculator.outputValue = number;
@@ -70,7 +72,6 @@ function clear() {
   calculator.firstOperand = null;
   calculator.waitingForSecondOperand = false;
   calculator.operator = null;
-  console.log('i love to clear')
 }
 
 function updateOutput() {
