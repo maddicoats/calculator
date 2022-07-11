@@ -1,5 +1,12 @@
 const onOff = document.querySelector('#onOff')
-onOff.addEventListener('click', (event) => document.querySelector('.output').classList.toggle('off'))
+onOff.addEventListener('click', (event) => { 
+    document.querySelector('.output').classList.toggle('off')
+    if (document.querySelector('.output').classList.contains('off')) {
+        clear()
+        updateOutput()
+        return;
+    }
+})
 
 
 const calculator = {
@@ -63,13 +70,13 @@ function clear() {
   calculator.firstOperand = null;
   calculator.waitingForSecondOperand = false;
   calculator.operator = null;
+  console.log('i love to clear')
 }
 
 function updateOutput() {
     const output = document.querySelector('.output')
     output.innerHTML = calculator.outputValue
 }
-
 updateOutput()
 
 
@@ -78,10 +85,6 @@ keys.addEventListener('click', (event) => {
     const { target } = event;
 
     if (!target.matches('button')) {
-        return;
-    }
-
-    if (document.querySelector('.output').classList.contains('off')) {
         return;
     }
 
