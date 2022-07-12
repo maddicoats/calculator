@@ -48,7 +48,6 @@ function inputOperator(nextOperator) {
         calculator.outputValue = String(result);
         calculator.firstOperand = result;
     }
-
     calculator.waitingForSecondOperand = true;
     calculator.operator = nextOperator;
 }
@@ -63,7 +62,6 @@ function calculate(firstOperand, secondOperand, operator) {
     } else if (operator === '/') {
         return firstOperand / secondOperand;
     }
-
     return secondOperand;
 }
 

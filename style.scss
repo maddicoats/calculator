@@ -116,14 +116,36 @@ body {
 }
 
 // -----LABELS-----
+#labelbox1 {
+    margin-top: 30px;
+}
+
+#labelbox4 {
+    justify-content: space-between;
+    margin-right: 17px;
+    margin-left: 17px;
+}
+
 .labelbox {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
-}
 
-#labelbox1 {
-    margin-top: 30px;
+    &-0 {
+        padding-right: 18px;
+    }
+
+    &-dec {
+        padding-right: 8px;
+    }
+
+    &-1 {
+        padding-left: 5px;
+    }
+
+    &-2 {
+        padding-left: 5px;
+    }
 }
 
 label {
@@ -131,6 +153,9 @@ label {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
+
+
+
 
 // -----BUTTONS-----
 button {
